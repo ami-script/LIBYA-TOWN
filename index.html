@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libya Town - قوانين السيرفر</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-circle">
+                    <img src="libya_town.png" width="100px" height="100px">
+                </div>
+                <div class="logo-text">
+                    <span class="libya-text">LIBYA</span>
+                    <span class="town-text">town</span>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">مرحباً بك في Libya Town</h1>
+                    <p class="hero-subtitle">سيرفر رول بلاي احترافي - اقرأ القوانين قبل الدخول</p>
+                    <div class="hero-buttons">
+                        <a href="#rules" class="btn btn-primary">
+                            <i class="fas fa-book"></i>
+                            اقرأ القوانين
+                        </a>
+                        <a href="https://discord.com/invite/cqCfTAU8SR" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-discord"></i>
+                            انضم للديسكورد
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules" class="rules-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-gavel"></i>
+                    قوانين السيرفر
+                </h2>
+                <p class="section-subtitle">يرجى قراءة جميع القوانين بعناية لتجنب التعرض للعقوبات</p>
+            </div>
+            
+            <div class="rules-grid">
+                <!-- Discord Rules -->
+                <div class="rule-category">
+                    <div class="rule-header" onclick="toggleRule('discord-rules')">
+                        <div class="rule-icon">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <h3>قوانين الديسكورد</h3>
+                        <div class="toggle-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="rule-content" id="discord-rules">
+                        <div class="rule-item">
+                            <h4>
+                                <i class="fas fa-exclamation-triangle"></i>
+                                أشياء تعرضك للحظر من المجتمع:
+                            </h4>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-ban"></i>
+                                    سب الأعراض والمناقشات في الأمور الدينية والسياسية
+                                </li>
+                                <li>
+                                    <i class="fas fa-shopping-cart"></i>
+                                    البيع والشراء وانتحال الشخصيات
+                                </li>
+                                <li>
+                                    <i class="fas fa-eye-slash"></i>
+                                    نشر صور أو محتوى إباحي أو مخل بالآداب
+                                </li>
+                                <li>
+                                    <i class="fas fa-virus"></i>
+                                    نشر روابط مشبوهة أو محاولة التلغيم
+                                </li>
+                                <li>
+                                    <i class="fas fa-user-secret"></i>
+                                    النصب أو محاولات السرقة
+                                </li>
+                                <li>
+                                    <i class="fas fa-angry"></i>
+                                    كثرة المشاكل والاستهزاء
+                                </li>
+                                <li>
+                                    <i class="fas fa-image"></i>
+                                    استخدام صور غير لائقة
+                                </li>
+                                <li>
+                                    <i class="fas fa-comments"></i>
+                                    تكرار الكلام (السبام) في الرومات
+                                </li>
+                                <li>
+                                    <i class="fas fa-at"></i>
+                                    كثرة المنشن بدون سبب
+                                </li>
+                                <li>
+                                    <i class="fas fa-bullhorn"></i>
+                                    التشهير والاستهزاء بالآخرين
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Safe Zones Rules -->
+                <div class="rule-category">
+                    <div class="rule-header" onclick="toggleRule('safe-zones')">
+                        <div class="rule-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>قوانين المناطق الآمنة</h3>
+                        <div class="toggle-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="rule-content" id="safe-zones">
+                        <div class="rule-item safe-zone-level-1">
+                            <h4>
+                                <i class="fas fa-circle" style="color: #28a745;"></i>
+                                المناطق الآمنة - الدرجة الأولى (أمان كامل):
+                            </h4>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-hospital"></i>
+                                    مستشفى المدينة
+                                </li>
+                                <li>
+                                    <i class="fas fa-user-shield"></i>
+                                    مركز الشرطة الرئيسي
+                                </li>
+                                <li>
+                                    <i class="fas fa-balance-scale"></i>
+                                    المحكمة
+                                </li>
+                            </ul>
+                            <p class="zone-description">
+                                <i class="fas fa-info-circle"></i>
+                                يُمنع فيها تماماً: السلاح، الجرائم، المطاردات، الاستفزاز
+                            </p>
+                        </div>
+                        <div class="rule-item safe-zone-level-2">
+                            <h4>
+                                <i class="fas fa-circle" style="color: #ffc107;"></i>
+                                المناطق الآمنة - الدرجة الثانية (أمان جزئي):
+                            </h4>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-university"></i>
+                                    البنوك العامة
+                                </li>
+                                <li>
+                                    <i class="fas fa-parking"></i>
+                                    مواقف السيارات
+                                </li>
+                                <li>
+                                    <i class="fas fa-store"></i>
+                                    البقالة
+                                </li>
+                                <li>
+                                    <i class="fas fa-coffee"></i>
+                                    كافيهات المدينة
+                                </li>
+                                <li>
+                                    <i class="fas fa-cut"></i>
+                                    صالونات الحلاقة
+                                </li>
+                            </ul>
+                            <p class="zone-description">
+                                <i class="fas fa-info-circle"></i>
+                                ممنوع السلاح والخطف والقتل، يُسمح بالحوار والتفاوض
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Robbery Rules -->
+                <div class="rule-category">
+                    <div class="rule-header" onclick="toggleRule('robbery-rules')">
+                        <div class="rule-icon">
+                            <i class="fas fa-mask"></i>
+                        </div>
+                        <h3>قوانين السرقات</h3>
+                        <div class="toggle-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="rule-content" id="robbery-rules">
+                        <div class="rule-item robbery-type">
+                            <h4>
+                                <i class="fas fa-shopping-basket"></i>
+                                سرقة البقالة:
+                            </h4>
+                            <div class="robbery-details">
+                                <p>
+                                    <i class="fas fa-users"></i>
+                                    عدد العصابة: 2-4 أشخاص
+                                </p>
+                                <p>
+                                    <i class="fas fa-user-tie"></i>
+                                    شرط وجود: 2 شرطة على الأقل
+                                </p>
+                            </div>
+                        </div>
+                        <div class="rule-item robbery-type">
+                            <h4>
+                                <i class="fas fa-crosshairs"></i>
+                                سرقة محل الأسلحة:
+                            </h4>
+                            <div class="robbery-details">
+                                <p>
+                                    <i class="fas fa-users"></i>
+                                    عدد العصابة: 3-5 أشخاص
+                                </p>
+                                <p>
+                                    <i class="fas fa-user-tie"></i>
+                                    شرط وجود: 3 شرطة على الأقل
+                                </p>
+                            </div>
+                        </div>
+                        <div class="rule-item robbery-type">
+                            <h4>
+                                <i class="fas fa-gem"></i>
+                                سرقة محل المجوهرات:
+                            </h4>
+                            <div class="robbery-details">
+                                <p>
+                                    <i class="fas fa-users"></i>
+                                    عدد العصابة: 4-6 أشخاص
+                                </p>
+                                <p>
+                                    <i class="fas fa-user-tie"></i>
+                                    شرط وجود: 4 شرطة على الأقل
+                                </p>
+                                <p>
+                                    <i class="fas fa-user-friends"></i>
+                                    شرط وجود رهينة حقيقية
+                                </p>
+                            </div>
+                        </div>
+                        <div class="rule-item robbery-type">
+                            <h4>
+                                <i class="fas fa-landmark"></i>
+                                سرقة البنك المركزي:
+                            </h4>
+                            <div class="robbery-details">
+                                <p>
+                                    <i class="fas fa-users"></i>
+                                    عدد العصابة: 5-8 أشخاص
+                                </p>
+                                <p>
+                                    <i class="fas fa-user-tie"></i>
+                                    شرط وجود: 5 شرطة على الأقل
+                                </p>
+                                <p>
+                                    <i class="fas fa-user-friends"></i>
+                                    شرط وجود رهينة حقيقية
+                                </p>
+                                <p>
+                                    <i class="fas fa-lock"></i>
+                                    يُشترط تخطيط كامل وتنسيق داخلي واضح
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Creator Rules -->
+                <div class="rule-category">
+                    <div class="rule-header" onclick="toggleRule('creator-rules')">
+                        <div class="rule-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>قوانين صناع المحتوى</h3>
+                        <div class="toggle-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="rule-content" id="creator-rules">
+                        <div class="rule-item">
+                            <h4>
+                                <i class="fas fa-mobile-alt"></i>
+                                المنصات المشمولة:
+                            </h4>
+                            <div class="platforms-list">
+                                <span class="platform-tag">
+                                    <i class="fab fa-tiktok"></i>
+                                    تيك توك
+                                </span>
+                                <span class="platform-tag">
+                                    <i class="fab fa-facebook"></i>
+                                    فيسبوك
+                                </span>
+                                <span class="platform-tag">
+                                    <i class="fab fa-twitch"></i>
+                                    تويتش
+                                </span>
+                                <span class="platform-tag">
+                                    <i class="fas fa-broadcast-tower"></i>
+                                    كيك
+                                </span>
+                            </div>
+                        </div>
+                        <div class="rule-item">
+                            <h4>
+                                <i class="fas fa-clipboard-check"></i>
+                                الشروط المطلوبة:
+                            </h4>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-chart-line"></i>
+                                    عدد كافي من المتابعين كحد أدنى
+                                </li>
+                                <li>
+                                    <i class="fas fa-clock"></i>
+                                    بث واحد على الأقل لا يقل عن ساعتين
+                                </li>
+                                <li>
+                                    <i class="fas fa-link"></i>
+                                    وضع رابط الديسكورد في البث
+                                </li>
+                                <li>
+                                    <i class="fas fa-thumbs-up"></i>
+                                    عكس صورة حسنة على المدينة
+                                </li>
+                                <li>
+                                    <i class="fas fa-edit"></i>
+                                    كتابة اسم السيرفر في عنوان البث
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    الالتزام بقوانين السيرفر
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rule-item">
+                            <h4>
+                                <i class="fas fa-gift"></i>
+                                ميزات الرتبة:
+                            </h4>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-car"></i>
+                                    سيارة مخصصة لتسهيل الحركة
+                                </li>
+                                <li>
+                                    <i class="fas fa-hourglass-half"></i>
+                                    تخفيض مدة حبس الداخلية
+                                </li>
+                                <li>
+                                    <i class="fas fa-share"></i>
+                                    نشر رابط البث في ديسكورد ليبيا تاون
+                                </li>
+                                <li>
+                                    <i class="fas fa-hands-helping"></i>
+                                    دعم من قبل إدارة السيرفر
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- City Rules -->
+                <div class="rule-category">
+                    <div class="rule-header" onclick="toggleRule('city-rules')">
+                        <div class="rule-icon">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <h3>قوانين المدينة</h3>
+                        <div class="toggle-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="rule-content" id="city-rules">
+                        <div class="rule-item">
+                            <h4>
+                                <i class="fas fa-exclamation-triangle"></i>
+                                قوانين أساسية:
+                            </h4>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-handshake"></i>
+                                    احترام الجميع وعدم السب والإهانة
+                                </li>
+                                <li>
+                                    <i class="fas fa-theater-masks"></i>
+                                    تقدير الموقف وتقمص الرول بلاي
+                                </li>
+                                <li>
+                                    <i class="fas fa-skull-crossbones"></i>
+                                    منع القتل العشوائي (RDM)
+                                </li>
+                                <li>
+                                    <i class="fas fa-car-crash"></i>
+                                    منع الصدم العشوائي (VDM)
+                                </li>
+                                <li>
+                                    <i class="fas fa-bomb"></i>
+                                    منع الرماية بالأسلحة الثقيلة في المدينة
+                                </li>
+                                <li>
+                                    <i class="fas fa-mountain"></i>
+                                    منع قيادة سيارات السبورت في الأوفرود
+                                </li>
+                                <li>
+                                    <i class="fas fa-user-injured"></i>
+                                    منع الاعتداء على المدنيين بدون سبب
+                                </li>
+                                <li>
+                                    <i class="fas fa-eye"></i>
+                                    منع الستريم سنايب (عقوبة 100-250 خدمة)
+                                </li>
+                                <li>
+                                    <i class="fas fa-home"></i>
+                                    منع دخول المنزل أثناء المطاردة
+                                </li>
+                                <li>
+                                    <i class="fas fa-dizzy"></i>
+                                    في حالة الإغماء: التعبير عن الألم فقط
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rule-item">
+                            <h4>
+                                <i class="fas fa-times-circle"></i>
+                                ممنوعات إضافية:
+                            </h4>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-fist-raised"></i>
+                                    الضرب في المناطق الآمنة
+                                </li>
+                                <li>
+                                    <i class="fas fa-redo"></i>
+                                    تكرار طلب الرقابة بدون سبب
+                                </li>
+                                <li>
+                                    <i class="fas fa-traffic-light"></i>
+                                    مقاومة العسكري في المخالفات المرورية
+                                </li>
+                                <li>
+                                    <i class="fas fa-pray"></i>
+                                    الخوض في الأمور الدينية والسياسية
+                                </li>
+                                <li>
+                                    <i class="fas fa-users-cog"></i>
+                                    تعدد الحسابات
+                                </li>
+                                <li>
+                                    <i class="fas fa-user-secret"></i>
+                                    انتحال الشخصيات الإدارية
+                                </li>
+                                <li>
+                                    <i class="fas fa-crosshairs"></i>
+                                    إطلاق النار العشوائي
+                                </li>
+                                <li>
+                                    <i class="fas fa-wrench"></i>
+                                    تخريب السيناريوهات
+                                </li>
+                                <li>
+                                    <i class="fas fa-keyboard"></i>
+                                    استعمال عضلة ALT في الفايتات
+                                </li>
+                                <li>
+                                    <i class="fas fa-running"></i>
+                                    التحلل للهروب أثناء الخطف
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gang Rules -->
+                <div class="rule-category">
+                    <div class="rule-header" onclick="toggleRule('gang-rules')">
+                        <div class="rule-icon">
+                            <i class="fas fa-user-ninja"></i>
+                        </div>
+                        <h3>قوانين العصابات</h3>
+                        <div class="toggle-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="rule-content" id="gang-rules">
+                        <div class="rule-item">
+                            <h4>
+                                <i class="fas fa-list-ol"></i>
+                                الإنشاء والتنظيم:
+                            </h4>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-file-contract"></i>
+                                    لا يُسمح بإنشاء عصابة إلا بعد تقديم طلب رسمي
+                                </li>
+                                <li>
+                                    <i class="fas fa-sitemap"></i>
+                                    يجب وجود هيكل تنظيمي واضح (زعيم - نائب - أعضاء)
+                                </li>
+                                <li>
+                                    <i class="fas fa-handshake-slash"></i>
+                                    يُمنع دمج عصابتين بدون إذن كتابي
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rule-item">
+                            <h4>
+                                <i class="fas fa-shield-virus"></i>
+                                الحدود والأسلحة:
+                            </h4>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-rocket"></i>
+                                    يُمنع استخدام الأسلحة الثقيلة إلا في سيناريوهات خاصة
+                                </li>
+                                <li>
+                                    <i class="fas fa-tshirt"></i>
+                                    يجب وجود لباس موحد أو هوية بصرية واضحة
+                                </li>
+                                <li>
+                                    <i class="fas fa-eye-slash"></i>
+                                    يُمنع التنقل بأسلحة مكشوفة في الأماكن المدنية
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rule-item">
+                            <h4>
+                                <i class="fas fa-user-secret"></i>
+                                قوانين الجرائم:
+                            </h4>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-user-shield"></i>
+                                    يُمنع تنفيذ عمليات إجرامية بدون وجود شرطة كافية
+                                </li>
+                                <li>
+                                    <i class="fas fa-stopwatch"></i>
+                                    يُمنع تنفيذ أكثر من عملية كبرى في مدة قصيرة
+                                </li>
+                                <li>
+                                    <i class="fas fa-scroll"></i>
+                                    كل عملية تحتاج سيناريو واضح وحوارات منطقية
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rule-item">
+                            <h4>
+                                <i class="fas fa-users"></i>
+                                التعامل مع العصابات الأخرى:
+                            </h4>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-swords"></i>
+                                    الاشتباكات ضمن حدود الرول بلاي فقط
+                                </li>
+                                <li>
+                                    <i class="fas fa-ban"></i>
+                                    يُمنع الاستفزاز خارج السيناريو
+                                </li>
+                                <li>
+                                    <i class="fas fa-flag"></i>
+                                    يُمنع إعلان الحرب دون موافقة إدارية
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Important Note -->
+            <div class="important-note">
+                <div class="note-header">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h3>ملاحظة مهمة</h3>
+                </div>
+                <p>
+                    <i class="fas fa-clock"></i>
+                    أي شكوى لا تُقبل بعد 24 ساعة ولا تُقبل إلا بالفيديو أو يجب أن يكون الفيديو أكثر من 5 دقائق مع وجود الصوت لاكتمال الشكوى
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discord Section -->
+    <section id="discord" class="discord-section">
+        <div class="container">
+            <div class="discord-card">
+                <div class="discord-header">
+                    <i class="fab fa-discord"></i>
+                    <h2>انضم إلى مجتمعنا على الديسكورد</h2>
+                </div>
+                <p>تواصل مع اللاعبين، احصل على التحديثات، وكن جزءاً من مجتمع Libya Town</p>
+                <div class="discord-features">
+                    <div class="feature">
+                        <i class="fas fa-comments"></i>
+                        <span>محادثات مباشرة</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-bell"></i>
+                        <span>إشعارات التحديثات</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <span>مجتمع نشط</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-headset"></i>
+                        <span>دعم فني</span>
+                    </div>
+                </div>
+                <a href="https://discord.com/invite/cqCfTAU8SR" target="_blank" class="discord-btn">
+                    <i class="fab fa-discord"></i>
+                    انضم للديسكورد الآن
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-circle">
+                        <img src="libya_town.png" width="100px" height="100px">
+                    </div>
+                    <div class="logo-text">
+                        <span class="libya-text">LIBYA</span>
+                        <span class="town-text">town</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                </div>
+                <div class="footer-info">
+                    <p>
+                        <i class="fas fa-copyright"></i>
+                        2024 Libya Town. جميع الحقوق محفوظة.
+                    </p>
+                    <p>
+                        <i class="fas fa-gamepad"></i>
+                        سيرفر رول بلاي احترافي
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
